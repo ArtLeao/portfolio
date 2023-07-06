@@ -1,0 +1,87 @@
+*{
+    box-sizing: content-box;
+}
+
+body{
+    background-image: linear-gradient(145deg, black 40%,#2F5218);
+    color: white;
+}
+
+.bg-dark-subtle{
+    background-color: #C03139!important;
+}
+
+a:hover:not(a.dropdown-item){
+  border-bottom: 5px solid rgb(11 18 105);
+  padding-bottom: 2px;
+}
+
+.nav-link{
+    transition: none;
+}
+
+.navbar-nav .nav-link.active{
+    color: white;
+}
+
+.navbar-nav .nav-link.active:hover{
+    color: rgb(11 18 105);
+}
+
+.navbar-brand{
+    color: rgb(255 255 255);
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+div.projetos{
+    width: 700px;
+    background-color: brown;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+div.projetos ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+a{
+    text-decoration: none;
+}
+
+div.projetos li{
+    list-style: none;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.projetos li:hover{
+    border: 1px solid white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+div.projetos p{
+    margin-left: 5px;
+    color: white;
+}

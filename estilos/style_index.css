@@ -1,0 +1,132 @@
+body{
+    background-image: linear-gradient(145deg, black 40%,#2F5218);
+    color: white;
+}
+
+.bg-dark-subtle{
+    background-color: #C03139!important;
+}
+
+.container-fluid a:hover:not(a.dropdown-item){
+  border-bottom: 5px solid rgb(11 18 105);
+  padding-bottom: 2px;
+}
+
+.nav-link{
+    transition: none;
+}
+
+.navbar-nav .nav-link.active{
+    color: white;
+}
+
+.navbar-nav .nav-link.active:hover{
+    color: rgb(11 18 105);
+}
+
+.navbar-brand{
+    color: rgb(255 255 255);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.img{
+    height: 500px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+div.img img{
+    height: 500px;
+    width: 900px;
+}
+
+main{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+div.linguagens{
+    width: 600px;
+    background-color: brown;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+div.linguagens ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+div.linguagens li{
+    list-style: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+div.linguagens li img:hover{
+    animation-name: girarLinguagens;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+aside.menu-lateral{
+    height: 100px;
+    width: 60px;
+    position: fixed;
+    right: 10px;
+    top: 40%;
+}
+
+aside.menu-lateral ul{
+    background-color: transparent;
+}
+
+aside.menu-lateral li{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    filter: invert(1);
+}
+
+.icon{
+    width: 30px;
+    transition: .5s ease-in-out;
+}
+
+.icon:hover{
+    transform: scale(1.5);
+}
+
+@keyframes girarLinguagens{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(360deg);
+        height: 110px;
+        width: 110px;
+    }
+    100%{
+        transform: rotate(720deg);
+        height: 120px;
+        width: 120px;
+    }
+}

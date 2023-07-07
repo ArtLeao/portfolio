@@ -95,10 +95,6 @@ aside.menu-lateral{
     top: 40%;
 }
 
-aside.menu-lateral ul{
-    background-color: transparent;
-}
-
 aside.menu-lateral li{
     display: flex;
     flex-direction: column;
